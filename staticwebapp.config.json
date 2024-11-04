@@ -1,70 +1,69 @@
 {
-    "routes": [
-      {
-        "route": "/",
-        "serve": "/index.html"
-      },
-      {
-        "route": "/login",
-        "serve": "/index.html" 
-      },
-      {
-        "route": "/app_permission_active",
-        "serve": "/app_permission_active.html"
-      },
-      {
-        "route": "/app_permissions_rw",
-        "serve": "/app_permissions_rw.html"
-      },
-      {
-        "route": "/taskStatus",
-        "serve": "/taskStatus.html"
-      },
-      {
-        "route": "/taskLog",
-        "serve": "/taskLog.html"
-      },
-      {
-        "route": "/MessageCategories",
-        "serve": "/MessageCategories.html"
-      },
-      {
-        "route": "/confirmed-messages",
-        "serve": "/confirmed-messages.html"
-      },
-      {
-        "route": "/survey-results",
-        "serve": "/survey-results.html"
-      },
-      {
-        "route": "/survey-view/:id",
-        "serve": "/survey-view.html"
-      },
-      {
-        "route": "/sent_messages",
-        "serve": "/sent_messages.html"
-      },
-      {
-        "route": "/notification_status/:type/:id",
-        "serve": "/notification_status.html"
-      },
-      {
-        "route": "/{*}",
-        "serve": "/index.html",
-        "statusCode": 200
+  "routes": [
+    {
+      "route": "/",
+      "serve": "/index.html"
+    },
+    {
+      "route": "/login",
+      "serve": "/index.html" 
+    },
+    {
+      "route": "/app_permission_active",
+      "serve": "/app_permission_active.html"
+    },
+    {
+      "route": "/app_permissions_rw",
+      "serve": "/app_permissions_rw.html"
+    },
+    {
+      "route": "/taskStatus",
+      "serve": "/taskStatus.html"
+    },
+    {
+      "route": "/taskLog",
+      "serve": "/taskLog.html"
+    },
+    {
+      "route": "/MessageCategories",
+      "serve": "/MessageCategories.html"
+    },
+    {
+      "route": "/confirmed-messages",
+      "serve": "/confirmed-messages.html"
+    },
+    {
+      "route": "/survey-results",
+      "serve": "/survey-results.html"
+    },
+    {
+      "route": "/survey-view/:id",
+      "serve": "/survey-view.html"
+    },
+    {
+      "route": "/sent_messages",
+      "serve": "/sent_messages.html"
+    },
+    {
+      "route": "/notification_status/:type/:id",
+      "serve": "/notification_status.html"
+    },
+    {
+      "route": "/*",  // Updated to '/*' for better matching
+      "serve": "/index.html",
+      "statusCode": 200
+    }
+  ],
+  "headers": [
+    {
+      "route": "/*",
+      "headers": {
+        "Content-Security-Policy": "default-src 'self'; script-src 'self' https:; style-src 'self' https:;",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN"
       }
-    ],
-    "headers": [
-      {
-        "route": "/*",
-        "headers": {
-          "Content-Security-Policy": "default-src 'self'; script-src 'self' https:; style-src 'self' https:;",
-          "Referrer-Policy": "strict-origin-when-cross-origin",
-          "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
-          "X-Content-Type-Options": "nosniff",
-          "X-Frame-Options": "SAMEORIGIN"
-        }
-      }
-    ]
-  }
-  
+    }
+  ]
+}
