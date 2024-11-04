@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "A static web app hosted on Azure",
   "scripts": {
-    "start": "echo 'No start script needed'"
+    "start": "echo 'No start script needed'",
+    "build": "echo 'No build command needed, serving static files'"
   },
   "dependencies": {}
 }
