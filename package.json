@@ -4,7 +4,10 @@
   "description": "A static web app hosted on Azure",
   "scripts": {
     "start": "echo 'No start script needed'",
-    "build": "echo 'No build command needed, serving static files'"
+    "build": "vue-cli-service build"
   },
-  "dependencies": {}
+  "dependencies": {
+    "vue": "^3.0.0",
+    "vue-cli-service": "^5.0.0"
+  }
 }
