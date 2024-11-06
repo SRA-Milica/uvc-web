@@ -1,13 +1,1 @@
-{
-  "name": "my-static-web-app",
-  "version": "1.0.0",
-  "description": "A static web app hosted on Azure",
-  "scripts": {
-    "start": "echo 'No start script needed'",
-    "build": "vue-cli-service build"
-  },
-  "dependencies": {
-    "vue": "^3.0.0",
-    "vue-cli-service": "^5.0.0"
-  }
-}
+
